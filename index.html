@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Bootstrap overrides -->
+    <style>
+      a {
+        text-decoration: none;
+      }
+
+      #stickySm {
+        background-color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+
+      <!-- Top navbar -->
+      <div class="row">
+        <!-- right page padding -->
+        <div class="col-12 col-sm-2">
+        </div>
+        <!-- /right page padding -->
+
+        <!-- nav -->
+        <div class="col-11 col-sm-8">
+          <nav id="mainNav" class="navbar navbar-expand-sm navbar-light pb-3 pt-3 p-sm-5">
+            <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse ">
+              <div class="navbar-nav position-absolute top-50 start-50 translate-middle">
+                <h2><span class="nav-item active">Digidog Deathmatch</span></h2>
+              </div>
+              <div class="navbar-nav position-absolute top-50 start-100 translate-middle">
+                <a class="nav-item nav-link" target="_blank" href="https://play.google.com/store/apps/details?id=com.AjaxGames.DigidogDeathmatch&hl=en_CA&gl=US">
+                  <img class="rounded d-flex mx-auto" src="static/img/logo.png" width="50" height="50" alt="">
+                  Download
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- /nav -->
+
+        <!-- left page padding -->
+        <div class="col-1 col-sm-2">
+        </div>
+        <!-- /left page padding -->
+      </div>
+      <!-- /Top navbar -->
+
+      <!-- Page Content -->
+      <div class="row">
+
+        <!-- Side navbar -->
+        <div class="col-sm-12 col-md-2" id="stickySm">
+          <div class="sticky-top" id="stickyMd">
+            <ul class="nav flex-md-column" >
+              <li class="nav-item">
+                <a class="nav-link" href="#controls">Controls</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#characterCustomization">Character Customization</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gameplay">Gameplay Tutorial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#screenshots">Screenshots</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mainNav">Back to top</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /Side navbar -->
+
+        <!-- Main Content -->
+        <div class="col-sm-12 col-md-8">
+          <!-- Header -->
+          <div class="row">
+            <!-- Header/carousel -->
+            <div class="col-md-12 col-xl-6">
+              <iframe class="d-flex mx-auto" src="https://www.youtube.com/embed/pN2v8_TGMsI" title="Gameplay video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- /Header/carousel -->
+            <!-- Intro text -->
+            <div class="col-md-12 col-xl-6 d-flex align-items-center p-sm-3">
+              <p class="text-center d-block mx-5 mx-md-0">
+                Digidog Deathmatch is an Android game built using the Unity game engine. Customize your character's stats and skills, then battle online or offline in a 5 minute long action-combat deathmatch! 
+              </p>
+            </div>
+            <!-- /Intro text -->
+          </div>
+          <!-- /Header -->
+          <!-- Controls section -->
+          <div class="row pt-5">
+            <div class="col-12 pb-3">
+              <h4 id="controls" class="text-center">Controls</h4>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <img class="mb-sm-2 img-fluid d-block mx-auto" alt="Attack button" src="static/img/attack-button.png">
+              <p class="text-center d-block mx-5 mx-md-0">Tap the <strong>Attack Button</strong> to launch a melee attack, or hold and release to launch a strong melee attack which stuns the enemy for 1 second. 
+                <br>Melee attacks consume energy, identified in-game by the white bar underneath Player names.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <img class="mb-sm-2 img-fluid d-block mx-auto" alt="Spells button" src="static/img/spell-button.png">
+              <p class="text-center d-block mx-5 mx-md-0">Tap the <strong>Spell Button</strong> to cast your <a href="#spells">primary spell</a>, or hold to cast your <a href="#spells">secondary spell</a>.
+                <br>Spell casting consumes mana, identified in-game by the blue bar underneath Player names.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <img class="mb-sm-2 img-fluid d-block mx-auto" alt="Jump button" src="static/img/jump-button.png">
+              <p class="text-center d-block mx-5 mx-md-0">Tap the <strong>Jump Button</strong> to jump. 
+                <br>Characters can double jump and jump off of walls.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <img class="mb-sm-2 img-fluid d-block mx-auto" alt="Dodge button" src="static/img/dodge-button.png">
+              <p class="text-center d-block mx-5 mx-md-0">Tap the <strong>Dodge Button</strong> to dodge all attacks for 1 second. Dodging breaks out of stuns/hitstops.
+                <br>Depending on your <a href="#skills">dodge skills</a>, holding and releasing the dodge button may adjust the functionality of your dodge.
+              </p>
+            </div>
+          </div>
+          <!-- /Controls section -->
+
+          <!-- Character customization section -->
+          <div class="row pt-5">
+            <div class="col-12 pb-3">
+              <h4 id="characterCustomization" class="text-center">Character Customization</h4>
+            </div>
+          </div>
+
+            <!-- Stats -->
+          <div class="row">
+            <div class="col-md-12 col-xl-6 p-sm-3">
+              <h5 class="">Stats</h5>
+              <p class="small">Allocate 65 stat points across 5 stats:</p>
+              <p>
+                <strong>Strength: </strong>determines maximum damage
+              </p>
+              <p>
+                <strong>Precision: </strong>determines minimum damage
+              </p>
+              <p>
+                <strong>Speed: </strong>determines movement speed
+              </p>
+              <p>
+                <strong>Stamina: </strong>reduces the mana/energy cost of spells/attacks by 1% per point
+              </p>
+              <p>
+                <strong>Crit: </strong>allows for a % chance to score a critical hit (150% damage) on any attack
+              </p>
+            </div>
+            <div class="col-md-12 col-xl-6 d-flex align-items-center">
+              <img class="img-fluid d-block mx-auto mb-3 mb-lg-0" src="static/img/stats.jpg" alt="Stats image">
+            </div>
+          </div>
+          <!-- /Stats -->
+
+          <!-- Skills -->
+          <div class="row">
+            <div class="col-md-12 col-xl-6 d-flex align-items-center order-2 order-xl-1">
+              <img class="img-fluid d-block mx-auto mb-3 mb-lg-0" src="static/img/skills.jpg" alt="Dodge skills image">
+            </div>
+            <div class="col-md-12 col-xl-6 p-sm-3 order-1 order-xl-2">
+              <h5 id="skills">Skills</h5>
+              <p class="small">Choose a dodge type and up to two additional skills that impact your dodge:</p>
+              <p>
+                <strong>Roll: </strong>roll forward, ignoring all attacks for 1 second
+                <ul>
+                  <li>
+                    Can take <strong>Roll Jump</strong>, causing roll to jump your character upwards
+                  </li>
+                  <li>
+                    Can take <strong>Roll Bomb</strong>, allowing you to launch towards the ground after rolling, causing an explosion on impact that knocks back enemies
+                  </li>
+                </ul>
+              </p>
+              <p>
+                <strong>Dash: </strong>dash forward, ignoring all attacks for 1 second
+                <ul>
+                  <li>
+                    Can take <strong>Charge</strong>, allowing the use of an improved dash which knocks back all enemies in your path
+                  </li>
+                  <li>
+                    Can take <strong>Dash Distance +</strong>, increasing the total distance of dash by 50%
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <!-- /Skills -->
+
+          <!-- Spells -->
+          <div class="row">
+            <div class="col-md-12 col-xl-6 p-sm-3">
+              <h5 id="spells">Spells</h5>
+              <p class="small">Choose a primary and secondary spell to aid in combat:</p>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <strong>Primary Spells:</strong>
+                  <ul>
+                    <li><strong>Fireball:</strong> launch a fireball that deals 300% damage</li>
+                    <li><strong>Spell Jump:</strong> spend 25 mana to jump upwards</li>
+                    <li><strong>Stat Roll:</strong> gain a 1-6 point increase in a random stat, up to three times per death</li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                  <strong>Secondary Spells:</strong>
+                  <ul>
+                    <li><strong>Flamethrower:</strong> cast a flamethrower that burns enemies every 0.1 seconds for 25% damage</li>
+                    <li><strong>Levitate:</strong> spend 10 mana per second to slow your fall</li>
+                    <li><strong>Explosion:</strong> charge and release an explosion that deals up to 500% damage to all enemies around you</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-xl-6 d-flex align-items-center">
+              <img class="img-fluid d-block mx-auto mb-3 mb-lg-0" src="static/img/spells.jpg" alt="Spells image">
+            </div>
+          </div>
+          <!-- /Spells -->
+
+          </div>
+          <!-- /Character customization section -->
+
+          <!-- Gameplay section -->
+          <div class="row pt-5 mb-5">
+            <div class="col-12 pb-3">
+              <h4 id="gameplay" class="text-center">Gameplay Tutorial</h4>
+            </div>
+
+            <div class="col-12 col-md-8 offset-md-2">
+              <p class="text-center">
+                <ol>
+                  <li>
+                    Go to the Character Customization menu to customize your stats and skills.
+                  </li>
+                  <li>
+                    After customizing your character, select either single player or multi player at the main menu. Single player will immediately start a game against NPCs, 
+                    while multiplayer will search for active game queues with other players and attempt to join them. 
+                  </li>
+                  <li>
+                    Upon entering a game, you have 5 minutes to gain as many points as possible (pictured at the top left of the game UI). Points are earned by doing damage and 
+                    securing kills.
+                  </li>
+                  <li>
+                    Thats it! The player with the highest number of points at the end of the game wins.
+                  </li>
+                  <li>
+                    Digidog Deathmatch can be downloaded on <a href="https://play.google.com/store/apps/details?id=com.AjaxGames.DigidogDeathmatch&hl=en_CA&gl=US" target="_blank">Google Play</a>.
+                  </li>
+                </ol>
+              </p>
+            </div>
+
+            <div id="screenshots" class="col-12 col-md-8 offset-md-2 pt-2 d-block justify-content-center">
+              <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner rounded" style="background: black;">
+                  <div class="carousel-item active">
+                    <img src="static/img/feature2.jpg" class="img-fluid d-block mx-auto rounded" alt="Feature image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static/img/feature3.jpg" class="img-fluid d-block mx-auto rounded" alt="Feature image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static/img/feature4.jpg" class="img-fluid d-block mx-auto rounded" alt="Feature image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static/img/feature5.jpg" class="img-fluid d-block mx-auto rounded" alt="Feature image">
+                  </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /Gameplay section -->
+
+        </div>
+        <!-- /Main Content -->
+
+        <!-- page padding -->
+        <div class="col-2">
+        </div>
+        <!-- /page padding -->
+
+      </div>
+      <!-- /Page Content -->
+
+    </div>
+    <!-- bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- /bootstrap scripts -->
+
+    <script src="static/js/index.js"></script>
+  </body>
+  
+</html>
